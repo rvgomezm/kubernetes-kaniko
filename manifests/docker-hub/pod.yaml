@@ -7,7 +7,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args:
-    - "--context=git://github.com/rvgomezm/kubernetes-kaniko.git"
+    - "--context=git://github.com/rvgomezm/kubernetes-kaniko"
     - "--destination=vmarroquin/kaniko-test-image:1.0"
     volumeMounts:
     - name: kaniko-secret
